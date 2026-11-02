@@ -1,0 +1,6 @@
+Model,Settings,CV_Accuracy,CV_Precision,CV_Recall,CV_F1,CV_ROC_AUC,Train_Accuracy,Test_Accuracy,Test_Precision,Test_Recall,Test_F1,Test_ROC_AUC,Tuned_Threshold,Test_Recall_At_Tuned,Test_F1_At_Tuned
+Logistic Regression,C=1,0.7738,0.6198,0.4,0.484,0.7957,0.7952,0.7833,0.6216,0.4792,0.5412,0.789,0.24,0.7083,0.5714
+Random Forest,"max_depth=4, min_samples_leaf=5",0.7643,0.777,0.1867,0.295,0.7891,0.8048,0.7528,0.64,0.1667,0.2645,0.7608,0.29,0.6667,0.5401
+Gradient Boosting,"learning_rate=0.1, max_depth=2, n_estimators=100",0.781,0.6511,0.3956,0.4908,0.786,0.8488,0.7944,0.6667,0.4583,0.5432,0.7783,0.24,0.6979,0.5469
+MLP (baseline 32-16 relu),"hidden=(32, 16), activation=relu",0.7095,0.4538,0.4133,0.4314,0.7043,0.9964,0.7056,0.451,0.4792,0.4646,0.7073,0.1,0.6042,0.511
+MLP (tuned: activation=logistic),activation=logistic,0.7714,0.6016,0.44,0.5062,0.7927,0.7881,0.7917,0.6296,0.5312,0.5763,0.7848,0.23,0.6875,0.557

@@ -1,0 +1,5 @@
+Age,Income,LoanAmount,CreditScore,EmploymentYears,ExistingLoans,MonthlyDebt,LoanTerm,PreviousDefault,HomeOwnership
+45,1200000,300000,790,20,1,8000,36,No,Own
+34,650000,500000,650,8,2,22000,48,No,Mortgage
+23,250000,900000,520,1,4,45000,60,Yes,Rent
+52,480000,700000,610,15,3,30000,60,No,Rent

@@ -1,0 +1,78 @@
+{
+  "model_name": "Logistic Regression",
+  "model_class": "LogisticRegression",
+  "model_parameters": {
+    "C": 1,
+    "class_weight": null,
+    "dual": false,
+    "fit_intercept": true,
+    "intercept_scaling": 1,
+    "l1_ratio": 0.0,
+    "max_iter": 1000,
+    "n_jobs": null,
+    "penalty": "deprecated",
+    "random_state": 42,
+    "solver": "lbfgs",
+    "tol": 0.0001,
+    "verbose": 0,
+    "warm_start": false
+  },
+  "selection": {
+    "rule": "best cross-validated ROC-AUC on training data",
+    "cv_roc_auc": 0.7956639566395663
+  },
+  "trained_at": "2026-11-01T05:40:02",
+  "python_version": "3.12.3",
+  "scikit_learn_version": "1.8.0",
+  "pandas_version": "3.0.2",
+  "training_rows": 840,
+  "features": [
+    "Age",
+    "Income",
+    "LoanAmount",
+    "CreditScore",
+    "EmploymentYears",
+    "ExistingLoans",
+    "MonthlyDebt",
+    "LoanTerm",
+    "PreviousDefault",
+    "HomeOwnership"
+  ],
+  "categories": {
+    "PreviousDefault": [
+      "No",
+      "Yes"
+    ],
+    "HomeOwnership": [
+      "Mortgage",
+      "Own",
+      "Rent"
+    ]
+  },
+  "target": "Default",
+  "class_labels": {
+    "0": "Low risk",
+    "1": "High risk"
+  },
+  "decision_threshold": 0.5,
+  "tuned_threshold_higher_recall": 0.24,
+  "test_metrics": {
+    "accuracy": 0.7833333333333333,
+    "precision": 0.6216216216216216,
+    "recall": 0.4791666666666667,
+    "f1": 0.5411764705882353,
+    "roc_auc": 0.7890230429292929,
+    "confusion_matrix": [
+      [
+        236,
+        28
+      ],
+      [
+        50,
+        46
+      ]
+    ],
+    "train_accuracy": 0.7952380952380952,
+    "threshold": 0.5
+  }
+}

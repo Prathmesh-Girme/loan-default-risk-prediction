@@ -1,0 +1,12 @@
+# Loan Default Risk Prediction - Python dependencies
+# Install with:  pip install -r requirements.txt
+#
+# Results in the README were produced with Python 3.12.3 and:
+#   pandas 3.0.2, numpy 2.4.4, matplotlib 3.10.8, scikit-learn 1.8.0, joblib 1.5.3
+# The minimum versions below are lower bounds and were not each tested.
+
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+scikit-learn>=1.3
+joblib>=1.3

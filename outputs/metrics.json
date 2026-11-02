@@ -1,0 +1,166 @@
+{
+  "final_model": "Logistic Regression",
+  "selection_rule": "best cross-validated ROC-AUC on training data (test set not used)",
+  "majority_class_accuracy": 0.7333333333333334,
+  "baseline_mlp_test": {
+    "accuracy": 0.7055555555555556,
+    "precision": 0.45098039215686275,
+    "recall": 0.4791666666666667,
+    "f1": 0.46464646464646464,
+    "roc_auc": 0.7073469065656566,
+    "confusion_matrix": [
+      [
+        208,
+        56
+      ],
+      [
+        50,
+        46
+      ]
+    ],
+    "train_accuracy": 0.9964285714285714,
+    "threshold": 0.5
+  },
+  "final_model_test": {
+    "accuracy": 0.7833333333333333,
+    "precision": 0.6216216216216216,
+    "recall": 0.4791666666666667,
+    "f1": 0.5411764705882353,
+    "roc_auc": 0.7890230429292929,
+    "confusion_matrix": [
+      [
+        236,
+        28
+      ],
+      [
+        50,
+        46
+      ]
+    ],
+    "train_accuracy": 0.7952380952380952,
+    "threshold": 0.5
+  },
+  "final_model_test_tuned_threshold": {
+    "accuracy": 0.7166666666666667,
+    "precision": 0.4788732394366197,
+    "recall": 0.7083333333333334,
+    "f1": 0.5714285714285714,
+    "roc_auc": 0.7890230429292929,
+    "confusion_matrix": [
+      [
+        190,
+        74
+      ],
+      [
+        28,
+        68
+      ]
+    ],
+    "train_accuracy": 0.725,
+    "threshold": 0.24
+  },
+  "feature_importance_roc_auc_drop": {
+    "CreditScore": 0.17482244318181814,
+    "PreviousDefault": 0.0599648832070707,
+    "Income": 0.03449928977272729,
+    "LoanAmount": 0.009120501893939403,
+    "HomeOwnership": 0.0015092329545454864,
+    "MonthlyDebt": 0.0005504261363636464,
+    "Age": 0.00043994633838384534,
+    "EmploymentYears": -0.001726246843434326,
+    "LoanTerm": -0.004780224116161591,
+    "ExistingLoans": -0.0054805871212121
+  },
+  "comparison": [
+    {
+      "Model": "Logistic Regression",
+      "Settings": "C=1",
+      "CV_Accuracy": 0.773809523809524,
+      "CV_Precision": 0.6197598039215686,
+      "CV_Recall": 0.4,
+      "CV_F1": 0.4839597929130125,
+      "CV_ROC_AUC": 0.7956639566395663,
+      "Train_Accuracy": 0.7952380952380952,
+      "Test_Accuracy": 0.7833333333333333,
+      "Test_Precision": 0.6216216216216216,
+      "Test_Recall": 0.4791666666666667,
+      "Test_F1": 0.5411764705882353,
+      "Test_ROC_AUC": 0.7890230429292929,
+      "Tuned_Threshold": 0.24,
+      "Test_Recall_At_Tuned": 0.7083333333333334,
+      "Test_F1_At_Tuned": 0.5714285714285714
+    },
+    {
+      "Model": "Random Forest",
+      "Settings": "max_depth=4, min_samples_leaf=5",
+      "CV_Accuracy": 0.7642857142857143,
+      "CV_Precision": 0.7769963369963369,
+      "CV_Recall": 0.18666666666666668,
+      "CV_F1": 0.2949517383065016,
+      "CV_ROC_AUC": 0.7890514905149051,
+      "Train_Accuracy": 0.8047619047619048,
+      "Test_Accuracy": 0.7527777777777778,
+      "Test_Precision": 0.64,
+      "Test_Recall": 0.16666666666666666,
+      "Test_F1": 0.2644628099173554,
+      "Test_ROC_AUC": 0.7608112373737373,
+      "Tuned_Threshold": 0.29,
+      "Test_Recall_At_Tuned": 0.6666666666666666,
+      "Test_F1_At_Tuned": 0.540084388185654
+    },
+    {
+      "Model": "Gradient Boosting",
+      "Settings": "learning_rate=0.1, max_depth=2, n_estimators=100",
+      "CV_Accuracy": 0.7809523809523811,
+      "CV_Precision": 0.6510530593289214,
+      "CV_Recall": 0.39555555555555555,
+      "CV_F1": 0.49083734480749397,
+      "CV_ROC_AUC": 0.7859801264679314,
+      "Train_Accuracy": 0.8488095238095238,
+      "Test_Accuracy": 0.7944444444444444,
+      "Test_Precision": 0.6666666666666666,
+      "Test_Recall": 0.4583333333333333,
+      "Test_F1": 0.5432098765432098,
+      "Test_ROC_AUC": 0.7783301767676768,
+      "Tuned_Threshold": 0.24,
+      "Test_Recall_At_Tuned": 0.6979166666666666,
+      "Test_F1_At_Tuned": 0.5469387755102041
+    },
+    {
+      "Model": "MLP (baseline 32-16 relu)",
+      "Settings": "hidden=(32, 16), activation=relu",
+      "CV_Accuracy": 0.7095238095238094,
+      "CV_Precision": 0.45376290376290374,
+      "CV_Recall": 0.4133333333333333,
+      "CV_F1": 0.4313530021606079,
+      "CV_ROC_AUC": 0.7042818428184281,
+      "Train_Accuracy": 0.9964285714285714,
+      "Test_Accuracy": 0.7055555555555556,
+      "Test_Precision": 0.45098039215686275,
+      "Test_Recall": 0.4791666666666667,
+      "Test_F1": 0.46464646464646464,
+      "Test_ROC_AUC": 0.7073469065656566,
+      "Tuned_Threshold": 0.1,
+      "Test_Recall_At_Tuned": 0.6041666666666666,
+      "Test_F1_At_Tuned": 0.5110132158590308
+    },
+    {
+      "Model": "MLP (tuned: activation=logistic)",
+      "Settings": "activation=logistic",
+      "CV_Accuracy": 0.7714285714285716,
+      "CV_Precision": 0.6016284481801724,
+      "CV_Recall": 0.44000000000000006,
+      "CV_F1": 0.5062377646852532,
+      "CV_ROC_AUC": 0.7927009936766034,
+      "Train_Accuracy": 0.7880952380952381,
+      "Test_Accuracy": 0.7916666666666666,
+      "Test_Precision": 0.6296296296296297,
+      "Test_Recall": 0.53125,
+      "Test_F1": 0.576271186440678,
+      "Test_ROC_AUC": 0.7847616792929293,
+      "Tuned_Threshold": 0.23,
+      "Test_Recall_At_Tuned": 0.6875,
+      "Test_F1_At_Tuned": 0.5569620253164557
+    }
+  ]
+}

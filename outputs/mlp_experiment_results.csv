@@ -1,0 +1,18 @@
+Experiment,Parameter,Value,CV_Accuracy,CV_Precision,CV_Recall,CV_F1,CV_ROC_AUC,Train_Accuracy
+Baseline,baseline,"(32, 16) relu lr=0.001",0.7095,0.4538,0.4133,0.4314,0.7043,0.9997
+Activation,activation,identity,0.7762,0.6293,0.4089,0.4922,0.7933,0.7952
+Activation,activation,logistic,0.7714,0.6016,0.44,0.5062,0.7927,0.7935
+Activation,activation,tanh,0.706,0.4426,0.4089,0.424,0.6886,0.9994
+Activation,activation,relu,0.7095,0.4538,0.4133,0.4314,0.7043,0.9997
+Hidden Layers,hidden_layer_sizes,"(10,)",0.7679,0.5973,0.4044,0.4814,0.7674,0.8232
+Hidden Layers,hidden_layer_sizes,"(20, 10)",0.7298,0.4974,0.4622,0.4753,0.7176,0.9679
+Hidden Layers,hidden_layer_sizes,"(50, 25)",0.7167,0.4659,0.4267,0.4443,0.7052,0.9997
+Hidden Layers,hidden_layer_sizes,"(100, 50, 25)",0.7357,0.503,0.4444,0.4698,0.7156,1.0
+Learning Rate,learning_rate_init,0.0001,0.7679,0.5951,0.4267,0.4966,0.7754,0.8202
+Learning Rate,learning_rate_init,0.001,0.7095,0.4538,0.4133,0.4314,0.7043,0.9997
+Learning Rate,learning_rate_init,0.01,0.7107,0.461,0.4711,0.4638,0.6767,0.9997
+Learning Rate,learning_rate_init,0.1,0.7,0.4497,0.5556,0.4964,0.6941,0.8973
+Regularization (extra),alpha,0.0001,0.7095,0.4538,0.4133,0.4314,0.7043,0.9997
+Regularization (extra),alpha,0.01,0.6917,0.4283,0.4267,0.4255,0.6962,0.9994
+Regularization (extra),alpha,0.1,0.7012,0.4409,0.4444,0.4421,0.682,0.9964
+Regularization (extra),alpha,1.0,0.7571,0.5611,0.4356,0.4899,0.7564,0.8601
